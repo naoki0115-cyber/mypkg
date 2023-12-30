@@ -1,5 +1,5 @@
 # ROS_2mypkg
-[![test](https://github.com/naoki0115-cyber/robosys2023/actions/workflows/test.yml/badge.svg)](https://github.com/naoki0115-cyber/robosys2023/actions/workflows/test.yml)
+[![test](https://github.com/naoki0115-cyber/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/naoki0115-cyber/mypkg/actions/workflows/test.yml)
 ## 概要
 これは2つのノード間で通信を行うROS2のパッケージです。
 talkerノードから``random_numbers``トピックにプッシュされたデータをlistenerノードがサブスクライブし、表示します。
@@ -35,9 +35,5 @@ listenerは、talkerから受け取った1~6までの整数を0.5秒間隔で表
 ## ライセンス・著作権
 * このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
 * このパッケージのコードの一部は，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，本人の許可を得て自身の著作としたものです．
-	* https://ryuichiueda.github.io/my_slides/robosys_2022/lesson7.html#/
-	* https://ryuichiueda.github.io/my_slides/robosys_2022/lesson8.html#/
-	* https://ryuichiueda.github.io/my_slides/robosys_2022/lesson9.html#/
-	* https://ryuichiueda.github.io/my_slides/robosys_2022/lesson10.html#/
-	* https://ryuichiueda.github.io/my_slides/robosys_2022/lesson11.html#/
+	* https://github.com/ryuichiueda/my_slides/tree/master/robosys_2022
 * © 2023 Naoki Kaizawa

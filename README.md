@@ -11,7 +11,15 @@ $ ros2 launch mypkg talk_listen.launch.py
 ## 使用例
 listenerは、talkerから受け取った1~6までの整数を0.5秒間隔で表示します。
 ```
-使用コードを書く
+[INFO] [launch]: All log files can be found below /home/naoki/.ros/log/2023-12-30-21-44-03-548452-LAPTOP-SVGPSVBR-123787
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [talker-1]: process started with pid [123788]
+[INFO] [listener-2]: process started with pid [123790]
+[listener-2] [INFO] [1703940366.611012552] [listener]: 5
+[listener-2] [INFO] [1703940367.104194198] [listener]: 6
+[listener-2] [INFO] [1703940367.566554686] [listener]: 5
+[listener-2] [INFO] [1703940368.092197100] [listener]: 3
+[listener-2] [INFO] [1703940368.575127275] [listener]: 4
 ```
 ## ノードとトピックの概要
 * **Talker**(``talker``)：このノードは1～6のランダムな数字を0.5秒毎に``random_numbers``トピックにプッシュします。

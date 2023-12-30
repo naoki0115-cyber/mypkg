@@ -1,8 +1,8 @@
 # ROS_2mypkg
+[![test](https://github.com/naoki0115-cyber/robosys2023/actions/workflows/test.yml/badge.svg)](https://github.com/naoki0115-cyber/robosys2023/actions/workflows/test.yml)
 ## 概要
 これは2つのノード間で通信を行うROS2のパッケージです。
 talkerノードから``random_numbers``トピックにプッシュされたデータをlistenerノードがサブスクライブし、表示します。
-[![test](https://github.com/naoki0115-cyber/robosys2023/actions/workflows/test.yml/badge.svg)](https://github.com/naoki0115-cyber/robosys2023/actions/workflows/test.yml)
 ## 起動方法
 下記のコマンドを実行して、トピックのパブリッシャ(talker)とサブスクライバ(listener)を起動します。
 ```

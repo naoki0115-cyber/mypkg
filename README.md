@@ -4,9 +4,18 @@
 これは2つのノード間で通信を行うROS2のパッケージです。
 talkerノードから``random_numbers``トピックにプッシュされたデータをlistenerノードがサブスクライブし、表示します。
 ## 起動方法
-下記のコマンドを実行して、トピックのパブリッシャ(talker)とサブスクライバ(listener)を起動します。
+ROS2が導入されている環境で、以下のコマンドを実行して、トピックのパブリッシャ(talker)とサブスクライバ(listener)を起動します。
 ```
 $ ros2 launch mypkg talk_listen.launch.py
+```
+パブリッシャ(talker)とサブスクライバ(listener)を個別に実行する場合、別々の端末で以下のコマンドを実行して下さい。
+	* パブリッシャ(talker)
+```
+$ ros2 run mypkg talkerr
+```
+	* サブスクライバ(listener)
+```
+$ ros2 run mypkg listener
 ```
 ## 使用例
 listenerは、talkerから受け取った1~6までの整数を0.5秒間隔で表示します。

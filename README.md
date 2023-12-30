@@ -2,6 +2,7 @@
 ## 概要
 これは2つのノード間で通信を行うROS2のパッケージです。
 talkerノードから``random_numbers``トピックにプッシュされたデータをlistenerノードがサブスクライブし、表示します。
+[![test](https://github.com/naoki0115-cyber/robosys2023/actions/workflows/test.yml/badge.svg)](https://github.com/naoki0115-cyber/robosys2023/actions/workflows/test.yml)
 ## 起動方法
 下記のコマンドを実行して、トピックのパブリッシャ(talker)とサブスクライバ(listener)を起動します。
 ```
@@ -15,7 +16,7 @@ listenerは、talkerから受け取った1~6までの整数を0.5秒間隔で表
 ## ノードとトピックの概要
 * **Talker**(``talker``)：このノードは1～6のランダムな数字を0.5秒毎に``random_numbers``トピックにプッシュします。
 * **Listener**(``listener``)：このノードは``random_numbers``トピックから数字を受け取り、表示します。
-* random_numbers：16ビットの符号付き整数のトピックであり、1～6のランダムな数字を含みます。
+* **random_number**s：16ビットの符号付き整数のトピックであり、1～6のランダムな数字を含みます。
 ## ソフトウェア環境
 * このパッケージを使用するには、以下のソフトウェアが必要です。
 	* Python 3

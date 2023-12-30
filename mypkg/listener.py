@@ -6,10 +6,14 @@ from rclpy.node import Node
 from std_msgs.msg import Int16
 
 def cb(msg):
-  global node
-  node.get_logger().info("Listen: %d" % msg.data)
+    global node
+    received_data = msg.data
+    if 1 <= received_data <= 6:
+        node.get_logger().info("%d" % received_data)
+    else:
+        node.get_logger().info("Received: %d (Not in the range 1-6)" % received_data)
 
 rclpy.init()
 node = Node("listener")
-pub = node.create_subscription(Int16, "countup", cb, 10)
+sub = node.create_subscription(Int16, "random_numbers", cb, 10)
 rclpy.spin(node)

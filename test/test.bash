@@ -10,10 +10,6 @@ colcon build
 source "$dir/.bashrc"
 timeout 10 ros2 launch mypkg talk_listen.launch.py > /tmp/mypkg.log
 
-last_line=$(tail -n 1 /tmp/mypkg.log)
-if [[ $last_line =~ [1-6] ]]; then
-    echo "0"
-else
-    echo "1"
-fi
+cat /tmp/mypkg.log |
+grep -E '[0-6]'
 

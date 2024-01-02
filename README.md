@@ -1,4 +1,4 @@
-# ROS_2mypkg
+# mypkg
 [![test](https://github.com/naoki0115-cyber/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/naoki0115-cyber/mypkg/actions/workflows/test.yml)
 ## 概要
 これは2つのノード間で通信を行うROS2のパッケージです。
@@ -39,6 +39,8 @@ listenerは、talkerから受け取った1~6までの整数を0.5秒間隔で表
 ## テスト環境
 * このパッケージは以下の環境でテストされています。
 	* Ubuntu 22.04.3 LTS
+## その他
+* 上記のノードやトピックは、それぞれ個別に使用することが出来ます。
 ## ライセンス・著作権
 * このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
 * このパッケージのコードの一部は，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，本人の許可を得て自身の著作としたものです．

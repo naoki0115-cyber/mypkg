@@ -13,7 +13,7 @@ class Talker():
 
     def cb(self):
         msg = Int16()
-        msg.data = random.randint(1, 6)
+        msg.data = random.randint(1, 100)
         self.pub.publish(msg)
 
 def main():

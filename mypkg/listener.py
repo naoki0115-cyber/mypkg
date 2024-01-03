@@ -11,7 +11,7 @@ def cb(msg):
     if 1 <= received_data <= 6:
         node.get_logger().info("%d" % received_data)
     else:
-        node.get_logger().info("Received: %d (Not in the range 1-6)" % received_data)
+        node.get_logger().info("Received: %d" % received_data)
 
 rclpy.init()
 node = Node("listener")

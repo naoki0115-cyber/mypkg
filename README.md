@@ -10,7 +10,7 @@ $ ros2 launch mypkg talk_listen.launch.py
 ```
 * パブリッシャ(talker)とサブスクライバ(listener)を個別に実行する場合、別々の端末で以下のコマンドを実行して下さい。
 ```
-$ ros2 run mypkg talkerr
+$ ros2 run mypkg talker
 ```
 ```
 $ ros2 run mypkg listener
